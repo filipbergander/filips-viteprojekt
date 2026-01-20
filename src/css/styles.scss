@@ -68,6 +68,17 @@ footer {
     width: 100%;
 }
 
+.images-gallery {
+    display: flex;
+    flex-direction: column;
+}
+
+.images-gallery img {
+    width: 400px;
+    height: auto;
+    margin: 10px;
+}
+
 @media (max-width: 768px) {
     nav ul {
         gap: 0.5rem;
