@@ -1,3 +1,3 @@
 "use strict";
 
-console.log("Hej från main.js");
+console.log("Det fungerar!");
