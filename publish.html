@@ -21,28 +21,32 @@
             </nav>
         </header>
     </div>
-    <main>
+    <main class="publish-info">
         <h1>Hur publicerade jag hemsidan med VITE?</h1>
-        <ol>
+        <ul>
             <li>Jag har node.js nedladdat på min dator sedan tidigare.</li>
             <li> För att börja skapa hemsidan skrev jag i terminalen för windows: npm create vite@latest.</li>
-            <li>Jag valde projekt-namn -> framework till vanilla, variant till javascript -> nej till experimentella funktioner -> installera med npm och starta nu.</li>
-            <li>Jag startade VSC med code . -> La in node-modules/ inom .gitignore.-> uppladdning till github som publikt repo.</li>
+            <li>Jag valde projekt-namn > framework till vanilla, variant till javascript > nej till experimentella funktioner > installera med npm och starta nu.</li>
+            <li>Jag startade VSC med code . > La in node-modules/ inom .gitignore.> uppladdning till github som publikt repo.
+            </li>
             <li>Deletade övriga bilder och filer som fanns sedan innan inom public och src.</li>
             <li>Inom min index.html länkade jag in css- och javascript-filer. </li>
-            <li>Skapade vite.config.js för att lägga till sidor inom (html) när man kör npm run build, utan detta blir bara index.html lagd till dist</li>
-            <li>Kopplade github repo till Netlify för publicering av hemsidan, -> valde att deploya branch dev först för att kika.
+            <li>Skapade vite.config.js för att lägga till sidor inom (html) när man kör npm run build, utan detta blir bara index.html lagd till dist > genom build, rollupOptions, input, main, valde jag dirnamn på mina html-filer:
             </li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ol>
-
+        </ul> <img src="/images/carbon_code.png" alt="Kod som beskriver hur jag valde mina html-filer i vite.config.js" class="code" height="350" width="650"> <br>
+        <ul>
+            <li>Hämtade paketet/plugin vite-image-optimizer hos npm, skrev in npm install vite-plugin-image-optimizer --save-dev & npm install sharp --save-dev i terminalen </li>
+            <li>Laddade upp 6 bilder inom /images > 6 img-element inom pictures.html > vite.config.js skrev jag under plugins: ViteImageOptimizer > valde kvaliteter för mina bilder. <br>Nu hade jag bara avif-bilder, men skrev jpg, webp osv också.. > mixtrade
+                med kvalitet först > valde 75 som slutliga kvalitet. Detta blev automatiserat och jag själv behövde inte göra något för att ändra kvalitet, skrev endast in vilken kvalitetsgrad jag önskade.</li>
+            <li>La in kod till CSS. som ligger inom scss. </li>
+            <li>Inom terminalen > kommandot: npm run dev, för att förhandsgranska sidan.</li>
+            <li>Skapade publish.html, denna sida. > skapade readme.md fil</li>
+            <li>Optimerade allt genom att automatisera CSS, js och bilder genom kommandot npm run build. </li>
+        </ul>
+        <img src="/images/file-savings.png" alt="Skärmdump på terminalen som visar på förbättring av filstorlekar vid build">
+        <ul>
+            <li>Kopplade github repo till Netlify för publicering av hemsidan, > valde att deploya branch dev först för att kika.</li>
+        </ul>
     </main>
     <footer id="main-footer">
         <p>Skapad av Filip Bergander, 2026</p>

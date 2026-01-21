@@ -64,6 +64,10 @@
         margin-top: 2rem;
     }
     
+    .main-site {
+        background-color: rgb(71, 73, 73);
+    }
+    
     main p {
         font-weight: 600;
         line-height: 1.5;
@@ -75,7 +79,6 @@
         height: 10vh;
         align-items: center;
         justify-content: center;
-        width: 100%;
         margin: 1rem 0 0 0;
         padding: 1rem;
     }
@@ -104,6 +107,30 @@
         transition: .5s ease;
     }
     
+    .publish-info {
+        max-width: 800px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 2rem 1rem 1rem 2rem;
+        margin-top: 1rem;
+        font-size: 1.1rem;
+        font-weight: 500;
+        line-height: 1.5;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        background-color: rgb(250, 205, 136)
+    }
+    
+    .publish-info li {
+        margin: 0.5rem 0 0.5rem 0;
+        align-items: center;
+    }
+    
+    .publish-info img {
+        border-radius: 8px;
+        width: 100%;
+        height: auto;
+    }
+    
     @media (max-width: 1050px) {
         .images-gallery {
             grid-template-columns: 1fr;
@@ -117,6 +144,9 @@
         nav a {
             padding: 8px;
             font-size: 1.1rem;
+        }
+        .publish-info img {
+            width: 100%;
         }
     }
     
