@@ -23,7 +23,12 @@ export default defineConfig({
             jpg: {
                 quality: 65
             },
+            webp: {
+                enabled: true,
+                quality: 65
+            },
             avif: {
+                enabled: true,
                 quality: 65
             }
         })
