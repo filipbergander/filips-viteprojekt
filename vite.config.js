@@ -15,21 +15,21 @@ export default defineConfig({
     plugins: [
         ViteImageOptimizer({
             png: {
-                quality: 65
+                quality: 75
             },
             jpeg: {
-                quality: 65
+                quality: 75
             },
             jpg: {
-                quality: 65
+                quality: 75
             },
             webp: {
                 enabled: true,
-                quality: 65
+                quality: 75
             },
             avif: {
                 enabled: true,
-                quality: 65
+                quality: 75
             }
         })
     ]
